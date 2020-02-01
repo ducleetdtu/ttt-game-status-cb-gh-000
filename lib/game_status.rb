@@ -25,4 +25,4 @@ def won?(board)
   }
 end
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
-puts type(won?(board))
+puts won?(board).class
