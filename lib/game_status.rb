@@ -16,10 +16,10 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  for each combi in WIN_COMBINATIONS{
+  for each combi in WIN_COMBINATIONS
     if board[combi[0]] == "X" && board[combi[1]] == "X" && board[combi[2]] == "X"
       puts combi
-  }
+  end
 end
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 puts won?(board)
