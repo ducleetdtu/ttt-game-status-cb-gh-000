@@ -16,17 +16,13 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board.any? { |el| el == " "}
-    return false
-  else
-    WIN_COMBINATIONS.each{ |win_combination|
-      if board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X"
-        return win_combination.to_a
-      else
-        false
-      end
-    }
-  end
+  WIN_COMBINATIONS.each{ |win_combination|
+    if board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X"
+      return win_combination
+    else
+      false
+    end
+  }
 end
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts won?(board) #=> [0,1,2]
