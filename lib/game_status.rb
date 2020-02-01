@@ -24,6 +24,7 @@ def won?(board)
       false
     end
   }
+  return result
 end
 board = ["X", "X", "O", "X", "X", "O", " ", " ", " "]
 puts won?(board)
