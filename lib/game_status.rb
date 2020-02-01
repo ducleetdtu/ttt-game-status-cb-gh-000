@@ -54,4 +54,3 @@ def full?(board)
   end
   state==" "?false :true
 end
-
