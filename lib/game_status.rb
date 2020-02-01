@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   for each win_combination in WIN_COMBINATIONS
-    if board[combi[0]] == "X" && board[combi[1]] == "X" && board[combi[2]] == "X"
+    if board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X"
       puts combi
     else
       false
