@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  for each combi in WIN_COMBINATIONS
+  for each win_combination in WIN_COMBINATIONS
     if board[combi[0]] == "X" && board[combi[1]] == "X" && board[combi[2]] == "X"
       puts combi
     else
