@@ -32,9 +32,26 @@ def won?(board)
   state = false
 end
 
-def full?(board)
-  state = board.find{
-    |el| el = " "
-  }
-  state == " " ? false : true
+def draw?(board )
+  full?(board) && !won?(board)
 end
+
+def over?(board)
+  won?(board) || draw?(board)
+end
+
+
+def winner(board)
+
+  winner_state = won? board
+  winner_state ? board[winner_state[0]] : nil
+end
+
+def full?(board)
+
+  state = board.find do |cell|
+    cell ==" "
+  end
+  state==" "?false :true
+end
+
