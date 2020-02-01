@@ -25,4 +25,4 @@ def won?(board)
   }
 end
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-puts won?(board) #=> [0,1,2]
+puts won?(board).to match_array([3,4,5]) #=> [0,1,2]
