@@ -29,7 +29,7 @@ def won?(board)
       return win_combination
     end
   }
-  return result
+  state = false
 end
 board = ["X", "X", "X", "X", "X", "O", "X", "X", "O"]
 puts won?(board)
