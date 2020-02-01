@@ -20,7 +20,7 @@ def won?(board)
     if board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X"
       return win_combination.to_ary
     else
-      return false
+      false
     end
   }
 end
