@@ -16,21 +16,16 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  result = false
-  WIN_COMBINATIONS.each{ |win_combination|
-    win_index_1 = win_combination[0]
-    win_index_2 = win_combination[1]
-    win_index_3 = win_combination[2]
 
-    position_1 = board[win_index_1] # load the value of the board at win_index_1
-    position_2 = board[win_index_2] # load the value of the board at win_index_2
-    position_3 = board[win_index_3] # load the value of the board at win_index_3
-    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+
+  WIN_COMBINATIONS.each do |win_combination|
+    if board[win_combination[0]]==board[win_combination[1]]&&board[win_combination[1]]==board[win_combination[2]] &&board[win_combination[0]]!=" "
       return win_combination
     end
-  }
-  state = false
+  end
+  state= false
 end
+
 
 def draw?(board )
   full?(board) && !won?(board)
