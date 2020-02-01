@@ -26,6 +26,7 @@ def won?(board)
         false
       end
     }
+  end
 end
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts won?(board) #=> [0,1,2]
