@@ -31,5 +31,10 @@ def won?(board)
   }
   state = false
 end
-board = ["X", "X", "X", "X", "X", "O", "X", "X", "O"]
-puts won?(board)
+
+def full?(board)
+  state = board.find{
+    |el| el = " "
+  }
+  state == " " ? false : true
+end
