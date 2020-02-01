@@ -24,3 +24,5 @@ def won?(board)
     end
   }
 end
+board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
+won?(board) #=> [0,1,2]
