@@ -21,3 +21,5 @@ def won?(board)
       puts combi
   }
 end
+board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
+puts won?(board)
